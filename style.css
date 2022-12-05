@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#yellowLine{
+    stroke-dasharray: 270;
+    animation-name: in;
+    animation-duration: 1s;
+
+}
+@keyframes in {
+    0%{stroke-dasharray: 0 270;}
+    100%{stroke-dasharray: 270;}
+}
+#greenLine{
+    opacity: 0;
+    stroke-dasharray: 250;
+    animation-name: inG;
+    animation-duration: 1s;
+    animation-delay: .5s;
+}
+@keyframes inG {
+    0%{ opacity: 1;stroke-dashoffset: 250;}
+    100%{opacity: 1;stroke-dasharray:250 0; stroke-dashoffset: 250;}
+}
+
+#progressGreen{
+    animation: pro .4s ease-in-out;
+}
+@keyframes pro{
+    0%{width: 0;}
+    100%{width: 30px;}
+}
+#progressUnderGreen{
+    animation: proU .4s ease-in-out;
+}
+@keyframes proU{
+    0%{width: 0;}
+    100%{width: 20px;}
+}
+#progressYellow{
+    animation: proY .4s ease-in-out;
+}
+@keyframes proY{
+    0%{width: 0;}
+    100%{width: 40px;}
+}
+#progressUnderYellow{
+    animation: proUY .4s ease-in-out;
+}
+@keyframes proUY{
+    0%{width: 0;}
+    100%{width: 30px;}
+}
+#progressRed{
+    animation: proR .4s ease-in-out;
+}
+@keyframes proR{
+    0%{width: 0;}
+    100%{width: 20px;}
+}
+#progressUnderRed{
+    animation: proUR .4s ease-in-out;
+}
+@keyframes proUR{
+    0%{width: 0;}
+    100%{width: 30px;}
+}
